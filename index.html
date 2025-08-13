@@ -1,477 +1,690 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kos Harmoni - Hunian Nyaman dan Terjangkau</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header & Navigation -->
     <header class="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <span>K</span>
-                    </div>
-                    <h1>Kos Harmoni</h1>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="nav-desktop">
-                    <button onclick="scrollToSection('home')" class="nav-link active" data-section="home">Beranda</button>
-                    <button onclick="scrollToSection('about')" class="nav-link" data-section="about">Tentang</button>
-                    <button onclick="scrollToSection('room-types')" class="nav-link" data-section="room-types">Tipe Kamar</button>
-                    <button onclick="scrollToSection('rooms')" class="nav-link" data-section="rooms">Ketersediaan</button>
-                    <button onclick="scrollToSection('facilities')" class="nav-link" data-section="facilities">Fasilitas</button>
-                    <button onclick="scrollToSection('gallery')" class="nav-link" data-section="gallery">Galeri</button>
-                    <button onclick="scrollToSection('contact')" class="nav-link" data-section="contact">Kontak</button>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <div class="logo-icon">
+              <span>K</span>
             </div>
+            <h1>Kos Harmoni</h1>
+          </div>
 
-            <!-- Mobile Navigation -->
-            <nav class="nav-mobile" id="mobileNav">
-                <button onclick="scrollToSection('home')" class="nav-link-mobile">Beranda</button>
-                <button onclick="scrollToSection('about')" class="nav-link-mobile">Tentang</button>
-                <button onclick="scrollToSection('room-types')" class="nav-link-mobile">Tipe Kamar</button>
-                <button onclick="scrollToSection('rooms')" class="nav-link-mobile">Ketersediaan</button>
-                <button onclick="scrollToSection('facilities')" class="nav-link-mobile">Fasilitas</button>
-                <button onclick="scrollToSection('gallery')" class="nav-link-mobile">Galeri</button>
-                <button onclick="scrollToSection('contact')" class="nav-link-mobile">Kontak</button>
-            </nav>
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <button
+              onclick="scrollToSection('home')"
+              class="nav-link active"
+              data-section="home"
+            >
+              Beranda
+            </button>
+            <button
+              onclick="scrollToSection('about')"
+              class="nav-link"
+              data-section="about"
+            >
+              Tentang
+            </button>
+            <button
+              onclick="scrollToSection('room-types')"
+              class="nav-link"
+              data-section="room-types"
+            >
+              Tipe Kamar
+            </button>
+            <button
+              onclick="scrollToSection('rooms')"
+              class="nav-link"
+              data-section="rooms"
+            >
+              Ketersediaan
+            </button>
+            <button
+              onclick="scrollToSection('facilities')"
+              class="nav-link"
+              data-section="facilities"
+            >
+              Fasilitas
+            </button>
+            <button
+              onclick="scrollToSection('gallery')"
+              class="nav-link"
+              data-section="gallery"
+            >
+              Galeri
+            </button>
+            <button
+              onclick="scrollToSection('contact')"
+              class="nav-link"
+              data-section="contact"
+            >
+              Kontak
+            </button>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
         </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+          <button onclick="scrollToSection('home')" class="nav-link-mobile">
+            Beranda
+          </button>
+          <button onclick="scrollToSection('about')" class="nav-link-mobile">
+            Tentang
+          </button>
+          <button
+            onclick="scrollToSection('room-types')"
+            class="nav-link-mobile"
+          >
+            Tipe Kamar
+          </button>
+          <button onclick="scrollToSection('rooms')" class="nav-link-mobile">
+            Ketersediaan
+          </button>
+          <button
+            onclick="scrollToSection('facilities')"
+            class="nav-link-mobile"
+          >
+            Fasilitas
+          </button>
+          <button onclick="scrollToSection('gallery')" class="nav-link-mobile">
+            Galeri
+          </button>
+          <button onclick="scrollToSection('contact')" class="nav-link-mobile">
+            Kontak
+          </button>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h2>Kos Harmoni</h2>
-                <p>Hunian nyaman dan terjangkau di jantung kota dengan fasilitas lengkap</p>
-                <div class="hero-buttons">
-                    <button onclick="scrollToSection('contact')" class="btn-primary">Hubungi Kami</button>
-                    <button onclick="scrollToSection('gallery')" class="btn-secondary">Lihat Galeri</button>
-                </div>
-            </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h2>Kos Harmoni</h2>
+          <p>
+            Hunian nyaman dan terjangkau di jantung kota dengan fasilitas
+            lengkap
+          </p>
+          <div class="hero-buttons">
+            <button onclick="scrollToSection('contact')" class="btn-primary">
+              Hubungi Kami
+            </button>
+            <button onclick="scrollToSection('gallery')" class="btn-secondary">
+              Lihat Galeri
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h3>Tentang Kos Harmoni</h3>
-                <p>Kos Harmoni menawarkan hunian yang nyaman dan strategis untuk mahasiswa dan pekerja muda</p>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h4>Lokasi Strategis</h4>
-                    <p>Dekat dengan kampus, pusat perbelanjaan, dan transportasi umum</p>
-                </div>
-
-                <div class="about-card">
-                    <div class="about-price">Rp 800K</div>
-                    <h4>Harga Terjangkau</h4>
-                    <p>Mulai dari Rp 800.000/bulan sudah termasuk listrik dan air</p>
-                </div>
-
-                <div class="about-card">
-                    <div class="about-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h4>Aman & Nyaman</h4>
-                    <p>Lingkungan yang aman dengan sistem keamanan 24 jam</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h3>Tentang Kos Harmoni</h3>
+          <p>
+            Kos Harmoni menawarkan hunian yang nyaman dan strategis untuk
+            mahasiswa dan pekerja muda
+          </p>
         </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h4>Lokasi Strategis</h4>
+            <p>
+              Dekat dengan kampus, pusat perbelanjaan, dan transportasi umum
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-price">Rp 800K</div>
+            <h4>Harga Terjangkau</h4>
+            <p>Mulai dari Rp 800.000/bulan sudah termasuk listrik dan air</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h4>Aman & Nyaman</h4>
+            <p>Lingkungan yang aman dengan sistem keamanan 24 jam</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Room Types Section -->
     <section id="room-types" class="room-types">
-        <div class="container">
-            <div class="section-header">
-                <h3>Tipe Kamar</h3>
-                <p>Pilih tipe kamar yang sesuai dengan kebutuhan dan budget Anda</p>
-            </div>
-
-            <div class="room-types-grid">
-                <!-- Standard Room -->
-                <div class="room-card">
-                    <div class="room-image">
-                        <img src="/placeholder.svg?height=300&width=500" alt="Kamar Standard">
-                        <div class="room-badge">Kamar Standard</div>
-                    </div>
-                    <div class="room-content">
-                        <div class="room-header">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M2 4v16"></path>
-                                <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
-                                <path d="M2 17h20"></path>
-                                <path d="M6 8v9"></path>
-                            </svg>
-                            <h4>Kamar Standard</h4>
-                        </div>
-                        <div class="room-price">
-                            Rp 800.000<span>/bulan</span>
-                        </div>
-
-                        <div class="room-features">
-                            <div class="feature">• Ukuran kamar 3x4 meter</div>
-                            <div class="feature">• Kasur single bed + kasur busa</div>
-                            <div class="feature">• Lemari pakaian 2 pintu</div>
-                            <div class="feature">• Meja belajar + kursi</div>
-                            <div class="feature">• Kamar mandi dalam</div>
-                            <div class="feature">• Kipas angin</div>
-                            <div class="feature">• Jendela + ventilasi udara</div>
-                        </div>
-
-                        <div class="room-includes">
-                            <h5>Sudah Termasuk:</h5>
-                            <p>Listrik, air, Wi-Fi, maintenance, keamanan 24 jam</p>
-                        </div>
-
-                        <button onclick="scrollToSection('contact')" class="btn-room">Pilih Kamar Standard</button>
-                    </div>
-                </div>
-
-                <!-- Premium Room -->
-                <div class="room-card premium">
-                    <div class="room-image">
-                        <img src="/placeholder.svg?height=300&width=500" alt="Kamar Premium">
-                        <div class="room-badge premium">Kamar Premium</div>
-                        <div class="room-badge popular">Populer</div>
-                    </div>
-                    <div class="room-content">
-                        <div class="room-header">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9,22 9,12 15,12 15,22"></polyline>
-                            </svg>
-                            <h4>Kamar Premium</h4>
-                        </div>
-                        <div class="room-price">
-                            Rp 1.200.000<span>/bulan</span>
-                        </div>
-
-                        <div class="room-features">
-                            <div class="feature">• Ukuran kamar 4x4 meter</div>
-                            <div class="feature">• Kasur queen size + spring bed</div>
-                            <div class="feature">• Lemari pakaian 3 pintu + cermin</div>
-                            <div class="feature">• Meja belajar besar + kursi ergonomis</div>
-                            <div class="feature">• Kamar mandi dalam + water heater</div>
-                            <div class="feature premium">• AC 1 PK</div>
-                            <div class="feature">• Balkon pribadi</div>
-                            <div class="feature premium">• TV LED 32 inch</div>
-                        </div>
-
-                        <div class="room-includes premium">
-                            <h5>Sudah Termasuk:</h5>
-                            <p>Listrik, air, Wi-Fi premium, maintenance, keamanan 24 jam, cleaning service mingguan</p>
-                        </div>
-
-                        <button onclick="scrollToSection('contact')" class="btn-room premium">Pilih Kamar Premium</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="room-info">
-                <div class="info-card">
-                    <h4>Informasi Tambahan</h4>
-                    <p>Semua tipe kamar dilengkapi dengan akses ke fasilitas bersama seperti dapur, ruang tamu, area jemuran, dan parkir motor.</p>
-                    <p class="disclaimer">*Harga dapat berubah sewaktu-waktu. Deposit 1 bulan sewa untuk semua tipe kamar.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h3>Tipe Kamar</h3>
+          <p>Pilih tipe kamar yang sesuai dengan kebutuhan dan budget Anda</p>
         </div>
+
+        <div class="room-types-grid">
+          <!-- Standard Room -->
+          <div class="room-card">
+            <div class="room-image">
+              <img src="/image/kamar-standar.jpg" alt="Kamar Standard" />
+              <div class="room-badge">Kamar Standard</div>
+            </div>
+            <div class="room-content">
+              <div class="room-header">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M2 4v16"></path>
+                  <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                  <path d="M2 17h20"></path>
+                  <path d="M6 8v9"></path>
+                </svg>
+                <h4>Kamar Standard</h4>
+              </div>
+              <div class="room-price">Rp 800.000<span>/bulan</span></div>
+
+              <div class="room-features">
+                <div class="feature">• Ukuran kamar 3x4 meter</div>
+                <div class="feature">• Kasur single bed + kasur busa</div>
+                <div class="feature">• Lemari pakaian 2 pintu</div>
+                <div class="feature">• Meja belajar + kursi</div>
+                <div class="feature">• Kamar mandi dalam</div>
+                <div class="feature">• Kipas angin</div>
+                <div class="feature">• Jendela + ventilasi udara</div>
+              </div>
+
+              <div class="room-includes">
+                <h5>Sudah Termasuk:</h5>
+                <p>Listrik, air, Wi-Fi, maintenance, keamanan 24 jam</p>
+              </div>
+
+              <button onclick="scrollToSection('contact')" class="btn-room">
+                Pilih Kamar Standard
+              </button>
+            </div>
+          </div>
+
+          <!-- Premium Room -->
+          <div class="room-card premium">
+            <div class="room-image">
+              <img src="/image/kamar-premium.jpg" alt="Kamar Premium" />
+              <div class="room-badge premium">Kamar Premium</div>
+              <div class="room-badge popular">Populer</div>
+            </div>
+            <div class="room-content">
+              <div class="room-header">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                </svg>
+                <h4>Kamar Premium</h4>
+              </div>
+              <div class="room-price">Rp 1.200.000<span>/bulan</span></div>
+
+              <div class="room-features">
+                <div class="feature">• Ukuran kamar 4x4 meter</div>
+                <div class="feature">• Kasur queen size + spring bed</div>
+                <div class="feature">• Lemari pakaian 3 pintu + cermin</div>
+                <div class="feature">
+                  • Meja belajar besar + kursi ergonomis
+                </div>
+                <div class="feature">• Kamar mandi dalam + water heater</div>
+                <div class="feature premium">• AC 1 PK</div>
+                <div class="feature">• Balkon pribadi</div>
+                <div class="feature premium">• TV LED 32 inch</div>
+              </div>
+
+              <div class="room-includes premium">
+                <h5>Sudah Termasuk:</h5>
+                <p>
+                  Listrik, air, Wi-Fi premium, maintenance, keamanan 24 jam,
+                  cleaning service mingguan
+                </p>
+              </div>
+
+              <button
+                onclick="scrollToSection('contact')"
+                class="btn-room premium"
+              >
+                Pilih Kamar Premium
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-info">
+          <div class="info-card">
+            <h4>Informasi Tambahan</h4>
+            <p>
+              Semua tipe kamar dilengkapi dengan akses ke fasilitas bersama
+              seperti dapur, ruang tamu, area jemuran, dan parkir motor.
+            </p>
+            <p class="disclaimer">
+              *Harga dapat berubah sewaktu-waktu. Deposit 1 bulan sewa untuk
+              semua tipe kamar.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Rooms Availability Section -->
     <section id="rooms" class="rooms">
-        <div class="container">
-            <div class="section-header">
-                <h3>Ketersediaan Kamar</h3>
-                <p>Informasi terkini mengenai status kamar di Kos Harmoni</p>
-            </div>
-
-            <div class="rooms-stats">
-                <div class="stat-card">
-                    <div class="stat-number">20</div>
-                    <h4>Total Kamar</h4>
-                    <p>Jumlah keseluruhan kamar yang tersedia</p>
-                </div>
-
-                <div class="stat-card occupied">
-                    <div class="stat-number">15</div>
-                    <h4>Kamar Terisi</h4>
-                    <p>Kamar yang sudah ditempati penghuni</p>
-                </div>
-
-                <div class="stat-card available">
-                    <div class="stat-number">5</div>
-                    <h4>Kamar Kosong</h4>
-                    <p>Kamar yang siap untuk ditempati</p>
-                </div>
-            </div>
-
-            <div class="room-details">
-                <h4>Status Kamar Detail</h4>
-                <div class="room-details-grid">
-                    <div class="available-rooms">
-                        <h5>Kamar Tersedia (5 kamar)</h5>
-                        <div class="room-list">
-                            <div class="room-item">
-                                <span>Kamar 101 - Standard</span>
-                                <span class="badge available">Tersedia</span>
-                            </div>
-                            <div class="room-item">
-                                <span>Kamar 205 - Premium</span>
-                                <span class="badge available">Tersedia</span>
-                            </div>
-                            <div class="room-item">
-                                <span>Kamar 308 - Standard</span>
-                                <span class="badge available">Tersedia</span>
-                            </div>
-                            <div class="room-item">
-                                <span>Kamar 312 - Premium</span>
-                                <span class="badge available">Tersedia</span>
-                            </div>
-                            <div class="room-item">
-                                <span>Kamar 415 - Standard</span>
-                                <span class="badge available">Tersedia</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="booking-info">
-                        <h5>Informasi Booking</h5>
-                        <div class="info-cards">
-                            <div class="info-item">
-                                <h6>Proses Booking</h6>
-                                <p>Hubungi kami untuk survey kamar dan proses booking. Deposit 1 bulan sewa.</p>
-                            </div>
-                            <div class="info-item">
-                                <h6>Persyaratan</h6>
-                                <p>KTP, kartu keluarga, surat keterangan kerja/kuliah, dan pas foto 3x4.</p>
-                            </div>
-                            <div class="info-item">
-                                <h6>Kontrak Minimum</h6>
-                                <p>3 bulan untuk semua tipe kamar. Pembayaran dapat dicicil per bulan.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="booking-cta">
-                    <button onclick="scrollToSection('contact')" class="btn-primary">Booking Sekarang</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h3>Ketersediaan Kamar</h3>
+          <p>Informasi terkini mengenai status kamar di Kos Harmoni</p>
         </div>
+
+        <div class="rooms-stats">
+          <div class="stat-card">
+            <div class="stat-number">20</div>
+            <h4>Total Kamar</h4>
+            <p>Jumlah keseluruhan kamar yang tersedia</p>
+          </div>
+
+          <div class="stat-card occupied">
+            <div class="stat-number">15</div>
+            <h4>Kamar Terisi</h4>
+            <p>Kamar yang sudah ditempati penghuni</p>
+          </div>
+
+          <div class="stat-card available">
+            <div class="stat-number">5</div>
+            <h4>Kamar Kosong</h4>
+            <p>Kamar yang siap untuk ditempati</p>
+          </div>
+        </div>
+
+        <div class="room-details">
+          <h4>Status Kamar Detail</h4>
+          <div class="room-details-grid">
+            <div class="available-rooms">
+              <h5>Kamar Tersedia (5 kamar)</h5>
+              <div class="room-list">
+                <div class="room-item">
+                  <span>Kamar 101 - Standard</span>
+                  <span class="badge available">Tersedia</span>
+                </div>
+                <div class="room-item">
+                  <span>Kamar 205 - Premium</span>
+                  <span class="badge available">Tersedia</span>
+                </div>
+                <div class="room-item">
+                  <span>Kamar 308 - Standard</span>
+                  <span class="badge available">Tersedia</span>
+                </div>
+                <div class="room-item">
+                  <span>Kamar 312 - Premium</span>
+                  <span class="badge available">Tersedia</span>
+                </div>
+                <div class="room-item">
+                  <span>Kamar 415 - Standard</span>
+                  <span class="badge available">Tersedia</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-info">
+              <h5>Informasi Booking</h5>
+              <div class="info-cards">
+                <div class="info-item">
+                  <h6>Proses Booking</h6>
+                  <p>
+                    Hubungi kami untuk survey kamar dan proses booking. Deposit
+                    1 bulan sewa.
+                  </p>
+                </div>
+                <div class="info-item">
+                  <h6>Persyaratan</h6>
+                  <p>
+                    KTP, kartu keluarga, surat keterangan kerja/kuliah, dan pas
+                    foto 3x4.
+                  </p>
+                </div>
+                <div class="info-item">
+                  <h6>Kontrak Minimum</h6>
+                  <p>
+                    3 bulan untuk semua tipe kamar. Pembayaran dapat dicicil per
+                    bulan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-cta">
+            <button onclick="scrollToSection('contact')" class="btn-primary">
+              Booking Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Facilities Section -->
     <section id="facilities" class="facilities">
-        <div class="container">
-            <div class="section-header">
-                <h3>Fasilitas Lengkap</h3>
-                <p>Nikmati berbagai fasilitas yang mendukung kenyamanan hidup Anda</p>
-            </div>
-
-            <div class="facilities-grid">
-                <div class="facility-card">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-                        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-                        <line x1="12" y1="20" x2="12.01" y2="20"></line>
-                    </svg>
-                    <h4>Wi-Fi Gratis</h4>
-                    <p>Internet cepat 24 jam</p>
-                </div>
-
-                <div class="facility-card">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14,2 14,8 20,8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10,9 9,9 8,9"></polyline>
-                    </svg>
-                    <h4>Parkir Motor</h4>
-                    <p>Area parkir yang aman</p>
-                </div>
-
-                <div class="facility-card">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
-                        <path d="M7 2v20"></path>
-                        <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3z"></path>
-                        <path d="M19 2v3"></path>
-                    </svg>
-                    <h4>Dapur Bersama</h4>
-                    <p>Lengkap dengan peralatan masak</p>
-                </div>
-
-                <div class="facility-card">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path>
-                        <line x1="10" y1="5" x2="8" y2="7"></line>
-                        <line x1="2" y1="12" x2="9" y2="5"></line>
-                        <line x1="7" y1="10" x2="9" y2="12"></line>
-                    </svg>
-                    <h4>Kamar Mandi Dalam</h4>
-                    <p>Kamar mandi pribadi</p>
-                </div>
-
-                <div class="facility-card">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                        <line x1="8" y1="21" x2="16" y2="21"></line>
-                        <line x1="12" y1="17" x2="12" y2="21"></line>
-                    </svg>
-                    <h4>TV Kabel</h4>
-                    <p>Hiburan di ruang bersama</p>
-                </div>
-
-                <div class="facility-card">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                    <h4>Keamanan 24 Jam</h4>
-                    <p>Penjaga dan CCTV</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h3>Fasilitas Lengkap</h3>
+          <p>Nikmati berbagai fasilitas yang mendukung kenyamanan hidup Anda</p>
         </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+            <h4>Wi-Fi Gratis</h4>
+            <p>Internet cepat 24 jam</p>
+          </div>
+
+          <div class="facility-card">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14,2 14,8 20,8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10,9 9,9 8,9"></polyline>
+            </svg>
+            <h4>Parkir Motor</h4>
+            <p>Area parkir yang aman</p>
+          </div>
+
+          <div class="facility-card">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+              <path d="M7 2v20"></path>
+              <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3z"></path>
+              <path d="M19 2v3"></path>
+            </svg>
+            <h4>Dapur Bersama</h4>
+            <p>Lengkap dengan peralatan masak</p>
+          </div>
+
+          <div class="facility-card">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"
+              ></path>
+              <line x1="10" y1="5" x2="8" y2="7"></line>
+              <line x1="2" y1="12" x2="9" y2="5"></line>
+              <line x1="7" y1="10" x2="9" y2="12"></line>
+            </svg>
+            <h4>Kamar Mandi Dalam</h4>
+            <p>Kamar mandi pribadi</p>
+          </div>
+
+          <div class="facility-card">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <h4>TV Kabel</h4>
+            <p>Hiburan di ruang bersama</p>
+          </div>
+
+          <div class="facility-card">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h4>Keamanan 24 Jam</h4>
+            <p>Penjaga dan CCTV</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h3>Galeri Foto</h3>
-                <p>Lihat suasana dan fasilitas Kos Harmoni</p>
-            </div>
-
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Galeri 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Galeri 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Galeri 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Galeri 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Galeri 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Galeri 6">
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h3>Galeri Foto</h3>
+          <p>Lihat suasana dan fasilitas Kos Harmoni</p>
         </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/placeholder.svg?height=300&width=400" alt="Galeri 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="/placeholder.svg?height=300&width=400" alt="Galeri 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="/placeholder.svg?height=300&width=400" alt="Galeri 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="/placeholder.svg?height=300&width=400" alt="Galeri 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="/placeholder.svg?height=300&width=400" alt="Galeri 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="/placeholder.svg?height=300&width=400" alt="Galeri 6" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h3>Hubungi Kami</h3>
-                <p>Tertarik untuk tinggal di Kos Harmoni? Hubungi kami sekarang!</p>
-            </div>
-
-            <div class="contact-grid">
-                <!-- FAQ Section -->
-                <div class="faq-section">
-                    <h4>Pertanyaan yang Sering Diajukan</h4>
-                    <div class="faq-container" id="faqContainer">
-                        <!-- FAQ items will be generated by JavaScript -->
-                    </div>
-
-                    <div class="faq-controls">
-                        <button onclick="expandAllFaq()" class="faq-control">Buka Semua</button>
-                        <span>|</span>
-                        <button onclick="collapseAllFaq()" class="faq-control">Tutup Semua</button>
-                    </div>
-                </div>
-
-                <!-- Contact Info & Map -->
-                <div class="contact-info">
-                    <div class="contact-details">
-                        <h4>Informasi Kontak</h4>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <span>+62 812-3456-7890</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>info@kosharmoni.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>Jl. Harmoni No. 123, Kelurahan Sejahtera, Kecamatan Bahagia, Kota Damai 12345</span>
-                        </div>
-                    </div>
-
-                    <div class="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.1944901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1635959000000!5m2!1sen!2sus"
-                            width="100%"
-                            height="300"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h3>Hubungi Kami</h3>
+          <p>Tertarik untuk tinggal di Kos Harmoni? Hubungi kami sekarang!</p>
         </div>
+
+        <div class="contact-grid">
+          <!-- FAQ Section -->
+          <div class="faq-section">
+            <h4>Pertanyaan yang Sering Diajukan</h4>
+            <div class="faq-container" id="faqContainer">
+              <!-- FAQ items will be generated by JavaScript -->
+            </div>
+
+            <div class="faq-controls">
+              <button onclick="expandAllFaq()" class="faq-control">
+                Buka Semua
+              </button>
+              <span>|</span>
+              <button onclick="collapseAllFaq()" class="faq-control">
+                Tutup Semua
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Info & Map -->
+          <div class="contact-info">
+            <div class="contact-details">
+              <h4>Informasi Kontak</h4>
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>+62 812-3456-7890</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>info@kosharmoni.com</span>
+              </div>
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span
+                  >Jl. Harmoni No. 123, Kelurahan Sejahtera, Kecamatan Bahagia,
+                  Kota Damai 12345</span
+                >
+              </div>
+            </div>
+
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.1944901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1635959000000!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="footer-logo-icon">
-                        <span>K</span>
-                    </div>
-                    <span>Kos Harmoni</span>
-                </div>
-                <p>© 2024 Kos Harmoni. Semua hak dilindungi undang-undang.</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <span>K</span>
             </div>
+            <span>Kos Harmoni</span>
+          </div>
+          <p>© 2024 Kos Harmoni. Semua hak dilindungi undang-undang.</p>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
