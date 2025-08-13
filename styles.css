@@ -446,7 +446,8 @@ section {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  max-width: 32rem;
+  max-width: 74rem; /* ubah dari 32rem ke 48rem */
+  width: 100%;
   margin: 0 auto;
 }
 
