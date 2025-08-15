@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px; /* default lebih besar dari biasanya */
+}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #fffbeb;
+  font-size: 1.125rem; /* 18px x 1.125 = 20px */
 }
 
 .container {
@@ -58,7 +63,7 @@ body {
 }
 
 .logo h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: bold;
   color: #78350f;
 }
@@ -158,14 +163,14 @@ body {
 }
 
 .hero-content h2 {
-  font-size: 3rem;
+  font-size: 3.5rem; /* 63px */
   font-weight: bold;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 27px */
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   max-width: 48rem;
@@ -221,14 +226,14 @@ section {
 }
 
 .section-header h3 {
-  font-size: 2rem;
+  font-size: 2.5rem; /* 45px */
   font-weight: bold;
   color: #78350f;
   margin-bottom: 1rem;
 }
 
 .section-header p {
-  font-size: 1.125rem;
+  font-size: 1.25rem; /* 22px */
   color: #b45309;
   max-width: 48rem;
   margin: 0 auto;
@@ -260,14 +265,14 @@ section {
 }
 
 .about-price {
-  font-size: 2rem;
+  font-size: 2.25rem; /* 40px */
   font-weight: bold;
   color: #92400e;
   margin-bottom: 0.5rem;
 }
 
 .about-card h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: 600;
   color: #78350f;
   margin-bottom: 0.5rem;
@@ -349,13 +354,13 @@ section {
 }
 
 .room-header h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: bold;
   color: #78350f;
 }
 
 .room-price {
-  font-size: 2rem;
+  font-size: 2.25rem; /* 40px */
   font-weight: bold;
   color: #92400e;
   margin-bottom: 1.5rem;
@@ -422,6 +427,7 @@ section {
   font-weight: 500;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 1.125rem; /* 20px */
 }
 
 .btn-room:hover {
@@ -452,7 +458,7 @@ section {
 }
 
 .info-card h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: 600;
   color: #78350f;
   margin-bottom: 0.75rem;
@@ -461,6 +467,7 @@ section {
 .info-card p {
   color: #b45309;
   margin-bottom: 1rem;
+  font-size: 1.125rem; /* 20px */
 }
 
 .disclaimer {
@@ -531,7 +538,7 @@ section {
 }
 
 .room-details h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: 600;
   color: #78350f;
   margin-bottom: 1.5rem;
@@ -640,7 +647,7 @@ section {
 }
 
 .facility-card h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: 600;
   color: #78350f;
   margin-bottom: 0.5rem;
@@ -703,7 +710,7 @@ section {
 }
 
 .faq-section h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: 600;
   color: #78350f;
   margin-bottom: 1.5rem;
@@ -767,6 +774,7 @@ section {
 .faq-answer p {
   color: #b45309;
   line-height: 1.6;
+  font-size: 1.125rem; /* 20px */
 }
 
 .faq-controls {
@@ -803,7 +811,7 @@ section {
 }
 
 .contact-details h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: 600;
   color: #78350f;
   margin-bottom: 1.5rem;
@@ -872,7 +880,7 @@ section {
 }
 
 .footer-logo span {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 27px */
   font-weight: bold;
 }
 
@@ -881,7 +889,22 @@ section {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  .section-header h3 {
+    font-size: 2rem;
+  }
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
   .nav-desktop {
     display: none;
   }
@@ -900,7 +923,7 @@ section {
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .hero-buttons {
@@ -929,6 +952,9 @@ section {
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
   .container {
     padding: 0 0.5rem;
   }
@@ -938,11 +964,15 @@ section {
   }
 
   .section-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .hero-content h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
   }
 
   .btn-primary,
